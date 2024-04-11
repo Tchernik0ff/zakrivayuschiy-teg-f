@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-color: #fff;
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P-Regular", Fantasy;
+  --card-title-fweight: 'wght' 700;
+  --text-fweight: 'wght' 400;
+  --font-color: #000;
+  --large-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --mid-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --min-font-size: 14px;
+  --main-font-size: 18px;
+  --bckg-color: #fff;
+  --font-difference: #fff;
+  --heart-contour: #000;
+  --sparks: #FF0000;
+  --bkg-gradient: repeating-linear-gradient(180deg, #d3d3d3 1px, transparent 1px, transparent 3px,#d3d3d3 3px, #d3d3d3 5px),repeating-linear-gradient(90deg, #d3d3d3 1px, transparent 1px, transparent 3px,#d3d3d3 3px, #d3d3d3 5px),repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%);
+}
