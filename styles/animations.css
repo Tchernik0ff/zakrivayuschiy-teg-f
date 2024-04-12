@@ -12,3 +12,108 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes slideInFromLeft {
+  from {
+    left: -25px;
+  }
+  50% {
+    left: -21px;
+  }
+  to {
+    left: -25px;
+  }
+}
+
+.card__icon-button {
+  transition: 0.3s ease;
+}
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contur);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contur);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:active .core {
+  fill: var(--sparks);
+  transition-duration: fill 0.3s 0.03s linear ;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--sparks);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button .is-liked .core {
+  fill: var(--sparks);
+  transition-duration: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button .is-liked .main-body {
+  fill: var(--sparks);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button .contour {
+  fill: var(--heart-contur);
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button .is-liked .contour {
+  fill: var(--sparks);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.heart {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+.is-liked .heart {
+  animation: heartClick 0.3s ease-in 0.1s 1 normal;
+}
+
+.is-liked .sparks {
+  animation: sparking 0.3s ease-in 0.3s 1 normal;
+}
+
+@keyframes heartClick {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparking {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
