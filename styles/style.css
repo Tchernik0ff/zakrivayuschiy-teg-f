@@ -24,12 +24,9 @@
   inline-size: clamp(375px, 100%, 699px);
 }
 
-.header__title {
+.header__logo {
   padding-block-end: 19px;
   font-size: var(--large-font-size);
-}
-
-.header__logo {
   text-decoration: none;
 }
 
@@ -37,7 +34,7 @@
   outline: none;
 }
 
-.header__subtitle {
+.header__title {
   padding-block-end: 21px;
   font-size: var(--mid-font-size);
   text-transform: uppercase;
