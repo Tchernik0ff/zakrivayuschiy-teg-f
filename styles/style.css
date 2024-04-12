@@ -33,6 +33,10 @@
   text-decoration: none;
 }
 
+.header__logo:focus {
+  outline: none;
+}
+
 .header__subtitle {
   padding-block-end: 21px;
   font-size: var(--mid-font-size);
